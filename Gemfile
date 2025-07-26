@@ -9,20 +9,20 @@ gem 'airrecord'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bulma-rails', '~> 0.7.5'
 
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails', '~> 5.0', '>= 5.0.0'
 
 gem 'dalli', '~> 2.7'
 
 gem 'faraday'
 gem 'faraday_middleware'
 
-gem 'health_check'
+gem 'health_check', '>= 3.1.0'
 
 gem 'jbuilder', '~> 2.5'
 
 gem 'kramdown'
 
-gem 'loofah', '>= 2.3.1'
+gem 'loofah', '>= 2.4.0'
 
 # Must be locked before version 3.0 for use with airrecord gems
 # See: https://github.com/sirupsen/airrecord/issues/63
@@ -30,19 +30,19 @@ gem 'net-http-persistent', '~> 2.9'
 
 gem 'octokit', '~> 4.18.0'
 gem 'omniauth-github', '~> 1.4.0'
-gem 'omniauth-rails_csrf_protection', '~> 0.1'
+gem 'omniauth-rails_csrf_protection', '~> 1.0', '>= 1.0.0'
 
 gem 'puma', '~> 4.0'
 
 gem 'country_select', '~> 4.0', require: 'country_select_without_sort_alphabetical'
 
-gem 'rails', '~> 5.2.3'
+gem 'rails', '~> 5.2.4'
 
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 6.0', '>= 6.0.0'
 gem 'sidekiq', '< 6.0'
 gem 'sidekiq-scheduler'
 
-gem 'figaro'
+gem 'figaro', '>= 1.3.0'
 
 # commenting out these settings since we are not using enterprise sidekiq in local docker dev
 #unless ENV['RAILS_ENV'] == 'production' || ENV['RAILS_ENV'] == 'staging' || ENV['REDIS_HOST'] == 'redis'
@@ -72,11 +72,11 @@ gem 'uglifier', '>= 1.3.0'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 
-  gem 'dotenv-rails'
+  gem 'dotenv-rails', '>= 2.7.6'
 
-  gem 'factory_bot_rails'
+  gem 'factory_bot_rails', '>= 5.1.0'
 
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.8.3'
   gem 'rubocop-rails'
 
   gem 'shoulda-matchers'
@@ -103,5 +103,5 @@ group :development do
 
   gem 'terminal-notifier-guard'
 
-  gem 'web-console', '>= 3.3.0'
+  gem 'web-console', '>= 4.0.0'
 end

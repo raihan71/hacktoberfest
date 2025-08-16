@@ -36,7 +36,7 @@ gem 'puma', '~> 4.0'
 
 gem 'country_select', '~> 4.0', require: 'country_select_without_sort_alphabetical'
 
-gem 'rails', '~> 5.2.3'
+gem 'rails', '~> 7.1.5', '>= 7.1.5.2'
 
 gem 'sass-rails', '~> 5.0'
 gem 'sidekiq', '< 6.0'
@@ -59,7 +59,7 @@ gem 'figaro'
 
 
 gem 'state_machines'
-gem 'state_machines-activerecord'
+gem 'state_machines-activerecord', '>= 0.8.0'
 
 gem 'pg'
 gem 'pry'

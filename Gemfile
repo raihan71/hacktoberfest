@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/digitalocean/hacktoberfest.git" }
 
 gem 'airbrake', '~> 9.4'
-gem 'airrecord'
+gem 'airrecord', '>= 1.0.8'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bulma-rails', '~> 0.7.5'
@@ -13,7 +13,7 @@ gem 'coffee-rails', '~> 4.2'
 
 gem 'dalli', '~> 2.7'
 
-gem 'faraday'
+gem 'faraday', '>= 2.14.1'
 gem 'faraday_middleware'
 
 gem 'health_check'
@@ -28,8 +28,8 @@ gem 'loofah', '>= 2.3.1'
 # See: https://github.com/sirupsen/airrecord/issues/63
 gem 'net-http-persistent', '~> 2.9'
 
-gem 'octokit', '~> 4.18.0'
-gem 'omniauth-github', '~> 1.4.0'
+gem 'octokit', '~> 4.23.0'
+gem 'omniauth-github', '~> 2.0.0'
 gem 'omniauth-rails_csrf_protection', '~> 0.1'
 
 gem 'puma', '~> 4.0'
